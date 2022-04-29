@@ -1,16 +1,45 @@
 .main {
     font-family: 'Karla', sans-serif;
+    margin-top: 8rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h1,
+.profile-container h3 {
+    letter-spacing: 3px;
 }
 
 .profile-container h4 {
     color: rgb(102, 143, 179)
 }
 
+hr {
+    max-width: 100px;
+    margin-bottom: 3rem;
+    background-color: rgb(102, 143, 179);
+    height: 5px;
+}
+
+
 .profile-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+}
+
+.profile-container h3 {
+    margin-bottom: 0;
+}
+
+.profile-container h4 {
+    font-weight: 300;
+    margin: 0;
 }
 
 i {
@@ -18,10 +47,25 @@ i {
 }
 
 .profile-img {
-    width: 17em;
-    height: 18em;
+    max-width: 300px;
 }
 
 .text-container {
     padding: 1em;
+    margin: 2em auto;
+    max-width: 500px;
+    color: rgb(49, 51, 53)
+}
+
+.toggle-review-container {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    max-width: 500px;
+    margin: auto;
+}
+
+.toggle-review-container i {
+    display: block;
+    cursor: pointer;
 }
