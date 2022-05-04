@@ -3,6 +3,12 @@
     margin-top: 8rem;
 }
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1 {
     text-align: center;
     margin-bottom: 0;
@@ -48,11 +54,13 @@ i {
 
 .profile-img {
     max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .text-container {
-    padding: 1em;
-    margin: 2em auto;
+    padding: 0;
+    margin: 0;
     max-width: 500px;
     color: rgb(49, 51, 53)
 }
@@ -67,5 +75,35 @@ i {
 
 .toggle-review-container i {
     display: block;
+    cursor: pointer;
+}
+
+#btn-left,
+#btn-right {
+    background: transparent;
+    border-width: 0;
+
+}
+
+#btn-random {
+    font-family: inherit;
+    font-weight: bold;
+    border: 2px solid black;
+    width: 7rem;
+    height: 2rem;
+    letter-spacing: 1.5px;
+    background-color: rgb(102, 143, 179);
+    color: rgb(49, 51, 53);
+    padding: 5px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin: 2rem;
+}
+
+#btn-random:hover {
+    color: #fff;
     cursor: pointer;
 }
